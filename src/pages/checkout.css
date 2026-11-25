@@ -1,0 +1,131 @@
+
+.checkout-page {
+  min-height: 80vh;
+  padding: 50px 7%;
+  background: #f8fafc;
+}
+
+.checkout-page h1 {
+  color: #0f172a;
+  font-size: 34px;
+}
+
+.checkout-subtitle {
+  color: #64748b;
+  margin: 10px 0 30px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+}
+
+.checkout-form,
+.checkout-summary {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.checkout-form h2,
+.checkout-summary h2 {
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.checkout-form label {
+  display: block;
+  margin: 18px 0 8px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+  border-color: #2563eb;
+}
+
+.checkout-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.place-order-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+  background: #1d4ed8;
+}
+
+.checkout-item,
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+  color: #475569;
+}
+
+.checkout-total {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+  color: #0f172a;
+  font-size: 19px;
+}
+
+.order-success,
+.checkout-empty {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.success-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+}
+
+.order-success a,
+.checkout-empty a {
+  padding: 13px 25px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}
